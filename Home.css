@@ -1,0 +1,135 @@
+body {
+    /* background: linear-gradient(135deg, #8a2be2, #ff69b4, #ffffff); */
+    /* background: linear-gradient(135deg, #2c2c2c, #ff8c00, #ffffff); */
+    /* background: linear-gradient(135deg, #000000, #d4af37, #ffffff); */
+    /* background: linear-gradient(135deg, #000000, #d4af37); */
+    background: linear-gradient(135deg, #1e3a5f, #c0c0c0);
+    color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* background: rgba(0, 0, 0, 0.8); */
+    background: #162d46;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    /* transition: transform 0.3s ease; */
+}
+
+nav a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 50px;
+    min-height: 100vh;
+    color: #fff;
+}
+
+section img {
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+}
+
+section img:hover {
+    transform: scale(1.1);
+}
+
+ul {
+    list-style: none;
+    line-height: 2;
+    font-size: 20px;
+    max-width: 600px;
+}
+
+ul li {
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+ul li strong {
+    /* color: #000000; */
+    font-weight: bold;
+}
+
+ul li q {
+    font-style: italic;
+    color: #fff;
+}
+
+footer {
+    /* background: #222; */
+    /* background: #a9a9a9; */
+    background: #162d46;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    display: inline-block;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+
+}
+
+footer img {
+    width: 35px; 
+    height: 35px;
+    filter: grayscale(50%);
+}
+
+footer img:hover {
+    transform: scale(1.2);
+    filter: grayscale(0%);
+}
+
+.footer_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
